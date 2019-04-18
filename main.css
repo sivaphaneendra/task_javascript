@@ -1,0 +1,85 @@
+html, body {
+    font-family: 'Lato', sans-serif !important;
+    background-color: #e0e0e0 !important;
+}
+
+.header {
+    background-color: #337ab7;
+    height: 75px;
+}
+
+.header-form-group {
+    margin: 15px;
+}
+
+.sort-by-control {
+    margin-right: 15px;
+}
+
+.results_count {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.user_record {
+    background: white;
+    height: 140px;
+    margin-top: 10px;
+    border: 1px solid #d2d2d2;
+}
+
+.img_avatar {
+    width: 100px;
+    margin: 10px;
+}
+
+.profile_name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn_details {
+    float: right;
+    border-color: #337ab7 !important;
+    color: #337ab7 !important;
+    width: 100px;
+    margin: 25px;
+}
+
+.pagination_right {
+    float: right;
+}
+
+#searchIcon {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.hide_user_record {
+    display: none;
+}
+
+.pagination>li {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.user_details {
+    background: white;
+    height: 100px;
+    overflow-y: scroll;
+    border: 1px solid #d2d2d2;
+}
+
+.data_label, .data_value {
+    margin: 50px;
+}
+
+.odd, .even {
+    height: 25px;
+}
+
+.even {
+    background: #efefef;
+}

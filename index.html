@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UI Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="form-group header-form-group row">
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                    <select class="form-control sort-by-control" id="sortBy" onchange="changeOrder()">
+                        <option value="name_asc">Sort By Name (A - Z)</option>
+                        <option value="name_desc">Sory By Name (Z - A)</option>
+                        <option value="rank_asc">Sort By Rank (ASC)</option>
+                        <option value="rank_desc">Sort By Rank (DESC)</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" id="usersSearch" placeholder="Search"/>
+                        <span class="glyphicon glyphicon-search form-control-feedback" id="searchIcon" onclick="searchusers()"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="results">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
+                    <label class="results_count">Total Results : <span id="total_count"></span></label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
+                    <div id="user_records"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
+                    <div class="pagination_right">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination" id="pagination">
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
